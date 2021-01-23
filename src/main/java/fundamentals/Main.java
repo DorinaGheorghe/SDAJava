@@ -6,11 +6,12 @@ public class Main {
     public static void main(String[] args) {
 
         //sunt 2 metode de apelare a metodei tasksExercises.circlePerimeter
-        //prima metoda (cand avem variabile non=statice, non-statice=tin de obiect, deci e nevoie de instantiere
+        //prima metoda fara instantiere (cand metoda apelata este non statica, =tine doar de obiect si tb instantiere)
+
 //        TasksExercises tasksExercises = new TasksExercises(); //instantiere
 //        tasksExercises.circlePerimeter();//apelare metoda
 
-        //a doua metoda (cand avem variabile statice, static=nu tine de obiect)
+        //a doua metoda (cand metoda este statica, tine de clasa, nu de obiect-> nu e nevoie de instantiere)
         TasksExercises.circlePerimeter();
 
         //static vs non-static
