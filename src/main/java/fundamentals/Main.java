@@ -35,5 +35,15 @@ public class Main {
 
         //task 3
         TasksExercises.fizzBuzz();
+        TasksExercises.fizzBuzz1();
+
+        //task4
+        TasksExercises.printAllPrimenumbers();
+        //task5
+        //task6
+        //task7
+        //task8
+        //task9
+
     }
 }

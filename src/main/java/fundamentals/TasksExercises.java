@@ -48,56 +48,124 @@ public class TasksExercises {
     // ● in place of numbers divisible by 7, instead of a number the program should write "Buzz"
     // ● if the number is divisible by both 3 and 7, the program should print "Fizz buzz"
 
-    public static void fizzBuzz (){
-        Scanner scanner=new Scanner(System.in);
+    public static void fizzBuzz() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Give a positive number: ");
-        int number=scanner.nextInt();
-        for (int i=1; i<=number;i++){
-            if((i%3==0) && (i%7==0)){
-                System.out.println("FizzBuzz");
-            }
-            else if(i%3==0){
-                System.out.println("Fizz");
-            }
-            else if(i%7==0){
-                System.out.println("Buzz");
-            }
-            else{
+        int number = scanner.nextInt();
+        for (int i = 1; i <= number; i++) {
+            if ((i % 3 == 0) && (i % 7 == 0)) {
+                System.out.println("FizzBuzz" + i);
+            } else if (i % 3 == 0) {
+                System.out.println("Fizz" + i);
+            } else if (i % 7 == 0) {
+                System.out.println("Buzz" + i);
+            } else {
                 System.out.println(i);
             }
         }
     }
 
-    //Task.4
-    // Write an application that takes a positive number from the user (type int) and prints all prime numbers greater
-    // than 1 and less than the given number.
-
-    public static void(){
-
+    public static void fizzBuzz1() { //varianta imbunatatita
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Give a positive number: ");
+        int number = scanner.nextInt();
+        for (int i = 1; i <= number; i++) {
+            if ((i % 3 == 0) && (i % 7 == 0)) {
+                System.out.println("FizzBuzz" + i);
+                continue;
+            }
+            if (i % 3 == 0) {
+                System.out.println("Fizz" + i);
+                continue;
+            }
+            if (i % 7 == 0) {
+                System.out.println("Buzz" + i);
+                continue;
+            }
+            System.out.println(i);
+        }
     }
 
+
+    //Task.4
+    // 2.Write an application that takes a positive number from the user (type int) and prints all prime numbers greater
+    // than 1 and less than the given number.
+
+    public static void printAllPrimenumbers() {
+        System.out.println("Give me a number: ");
+        Scanner scanner = new Scanner(System.in);
+        int newNumber = scanner.nextInt();
+        if (newNumber <= 1) {
+            System.out.println("The number is not greater than 1");
+            return;
+        }
+        for (int i = 2; i < newNumber; i++) {
+            if (isPrime(i)) {
+                System.out.println(i);
+            }
+        }
+    }
+
+
+    private static boolean isPrime(int nr) {
+        for (int i = 2; i <= nr / 2; i++) {
+            if (nr % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private static boolean isPrime1(int nr) {
+        boolean isPrimeNo = true;
+        for (int i = 2; i <= nr / 2; i++) {
+            if (nr % i == 0) {
+                isPrimeNo = false;
+                break;
+            }
+        }
+        return isPrimeNo;
+    }
+
+    private static boolean isPrime2(int nr) {
+        boolean isPrimeNo = true;
+        for (int i = 2; i <= nr / 2; i++) {
+            if (nr % i != 0) {
+                continue;
+            }
+            isPrimeNo = false;
+            break;
+        }
+        return isPrimeNo;
+    }
+
+
     //Task.5
-    // Write an application that will take a positive number from the user (type int) and calculate the Fibonacci number
+    // 3.Write an application that will take a positive number from the user (type int) and calculate the Fibonacci number
     // at the indicated index. For example, if the number equals 5, your program should print the fifth Fibonacci number.
     // In Fibonacci sequence, each number is the sum of the two preceding ones.
 
+    public static void fibonacciNumber() {
+
+    }
+
     //Task.6
-    // Write an application that gets one positive number (type int) from the user and calculates a sum of digits of the
+    // 4.Write an application that gets one positive number (type int) from the user and calculates a sum of digits of the
     // given number. Hint: to make some operations on every single digit of the number (digit by digit), you can calculate
     // the remainder of dividing the number by 10 (to get the value of the last digit) and divide the number by 10 (to
     // "move" to the next digit).
 
     //Task.7
-    // Write an application that will read texts (variables of the String type) until the user gives the text "Enough!"
+    // 5.Write an application that will read texts (variables of the String type) until the user gives the text "Enough!"
     // and then writes the longest of the given texts (not including the text "Enough!"). If the user does not provide
     // any text, write "No text provided".
 
     //Task.8
-    // Write an application that reads a text from the user (type String) and counts a percentage of occurrences of a
+    // 6.Write an application that reads a text from the user (type String) and counts a percentage of occurrences of a
     // space character.
 
     //Task.9
-    // Write an application that "stutters", that is, reads the user's text (type String), and prints the given text,
+    // 7.Write an application that "stutters", that is, reads the user's text (type String), and prints the given text,
     // in which each word is printed twice. For example, for the input: "This is my test" the application should print
     // "This This is is my my test test".
 
