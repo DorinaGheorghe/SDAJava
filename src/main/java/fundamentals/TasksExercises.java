@@ -18,6 +18,7 @@ public class TasksExercises {
         System.out.println("Insert diameter: ");
         float diameter = scanner.nextFloat();
         System.out.println("The perimeter has the following size: " + diameter * pi);
+
     }
 
     //task 2.
@@ -139,13 +140,32 @@ public class TasksExercises {
         return isPrimeNo;
     }
 
+    private static boolean isPrime3(int nr) {
+        if (nr == 2) {//daca este 2, atunci e prim
+            return true;
+        }
+        if (nr == 0 || nr == 1 || nr % 2 == 0) {//daca nr este 0 sau 1 sau se imparte la 2, atunci nu este nr prim
+            return false;
+        }
+        for (int i = 3; i * i <= nr; i += 2) { //pornim de la 3 pt ca 2 l-am verificat mai sus deja; incrementare din 2 in 2;
+            //in for mergem doar pana la radical din nr (pt ca dupa acela nu mai gasim alti divizori)
+            // pt ca deja am tratat cazurile exceptate pana la 2; programul devine de 2 ori mai rapid
+            if (nr % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 
     //Task.5
     // 3.Write an application that will take a positive number from the user (type int) and calculate the Fibonacci number
     // at the indicated index. For example, if the number equals 5, your program should print the fifth Fibonacci number.
     // In Fibonacci sequence, each number is the sum of the two preceding ones.
 
-    public static void fibonacciNumber() {
+    public static void fibonacciNumber(int no) {
+        Scanner scanner = new Scanner(System.in);
+
 
     }
 
