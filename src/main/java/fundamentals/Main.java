@@ -42,6 +42,8 @@ public class Main {
         //task5
         //task6
         //task7
+        TasksExercises.longestWord();
+        TasksExercises.longestWord2();
         //task8
         //task9
 

@@ -180,13 +180,51 @@ public class TasksExercises {
     // and then writes the longest of the given texts (not including the text "Enough!"). If the user does not provide
     // any text, write "No text provided".
 
+    public static void longestWord() {
+        System.out.println("Type a word: ");
+        String word = "";
+        String longestWord1 = "";
+        Scanner scanner = new Scanner(System.in);
+        do {
+            word = scanner.next();
+            if (!word.equals("Enough") && longestWord1.length() < word.length()) {
+                longestWord1 = word;
+            }
+        } while (!word.equals("Enough"));
+        if (longestWord1.length() == 0) {
+            System.out.println("No text provided.");
+            return;
+        }
+        System.out.println("The longest word provided is: " + longestWord1);
+    }
+
+    public static void longestWord2() {
+        System.out.println("Type a word: ");
+        String word = "";
+        String longestWord1 = "";
+        Scanner scanner = new Scanner(System.in);
+        while (!word.equals("Enough")) {
+            if (longestWord1.length() < word.length()) {
+                longestWord1 = word;
+            }
+            word = scanner.next();//prin faptul ca am pus citirea dupa if, ne asiguram ca nu luam in calcul si Enough
+        }
+        if (longestWord1.length() == 0) {
+            System.out.println("No text provided.");
+            return;
+        }
+        System.out.println("The longest word provided is: " + longestWord1);
+    }
+
     //Task.8
     // 6.Write an application that reads a text from the user (type String) and counts a percentage of occurrences of a
     // space character.
+
 
     //Task.9
     // 7.Write an application that "stutters", that is, reads the user's text (type String), and prints the given text,
     // in which each word is printed twice. For example, for the input: "This is my test" the application should print
     // "This This is is my my test test".
+
 
 }
