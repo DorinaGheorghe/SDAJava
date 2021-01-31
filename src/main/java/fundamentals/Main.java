@@ -34,18 +34,22 @@ public class Main {
 //        TasksExercises.calculateBMI();
 
         //task 3
-        TasksExercises.fizzBuzz();
-        TasksExercises.fizzBuzz1();
+//        TasksExercises.fizzBuzz();
+//        TasksExercises.fizzBuzz1();
+//
+//        //task4
+//        TasksExercises.printAllPrimenumbers();
+//        //task5
+//        //task6
+//        //task7
+//        TasksExercises.longestWord();
+//        TasksExercises.longestWord2();
+//        //task8
+//        //task9
+//        TasksExercises.stutters();
 
-        //task4
-        TasksExercises.printAllPrimenumbers();
-        //task5
-        //task6
-        //task7
-        TasksExercises.longestWord();
-        TasksExercises.longestWord2();
-        //task8
-        //task9
+//        TasksExercises.testStrings();
+        TasksExercises.testObjects();
 
 
     }
