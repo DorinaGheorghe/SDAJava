@@ -24,7 +24,7 @@ public class Client {
     private String cnp;
     private BankAccount bankAccount;//tip BankAccount (variabila bankAccount este de tipul clasei BankAccount);
     // si clasele sunt tipuri in Java
-    private BankAccount [] bankAccounts;//tip array de BankAccount, nume field: bankAccounts
+    private BankAccount[] bankAccounts;//tip array de BankAccount, nume field: bankAccounts
 
     public BankAccount[] getBankAccounts() {
         return bankAccounts;
@@ -51,8 +51,8 @@ public class Client {
     }
 
     //public String toString() { //creere metoda prin care in main prin System.out.println(client)/
-        // System.out.println(client.toString()) afiseaza ce este in metoda to string (nume, cnp, banckAccount;
-       // return "Name= " + this.name + ", CNP=" + this.cnp + ", Bank account= " + this.bankAccount;
+    // System.out.println(client.toString()) afiseaza ce este in metoda to string (nume, cnp, banckAccount;
+    // return "Name= " + this.name + ", CNP=" + this.cnp + ", Bank account= " + this.bankAccount;
 
     //}// cu Alt+Ins se poate insera toString si suprascrie metoda de mai sus
 
