@@ -27,8 +27,9 @@ public class Main {
         BankAccount.convertMoneyToCurrency(10, "EUR", "USD");
         System.out.println(BankAccount.convertMoneyToCurrency(10, "EUR", "USD"));
 
+        //var2.irosire de spatiu in memorie ca sa folosim o variabila pe care nu o mai utilizam in alta parte
         double x = BankAccount.convertMoneyToCurrency(10, "EUR", "USD");
-        System.out.println(x);//var2.irosire de spatiu in memorie ca sa folosim o variabila pe care nu o mai folosim
+        System.out.println(x);
 
         BankAccount bankAccount1 = new BankAccount("SAVING", "USD");
         BankAccount bankAccount2 = new BankAccount("SPENDING", "USD");

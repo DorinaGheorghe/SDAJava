@@ -1,6 +1,7 @@
 package fundamentals.oop;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Client  which consists of:
@@ -48,6 +49,13 @@ public class Client {
 
     public Client() {
         this.bankAccount = new BankAccount();
+    }
+
+    //* addBankAccount(takes one argument, bankAccount obj - if there already exists a banking account of the same type
+    // * in the array an error message is printed)
+    public static void addBankAccount(String bankAccount){
+        Scanner scanner=new Scanner(System.in);
+
     }
 
     //public String toString() { //creere metoda prin care in main prin System.out.println(client)/
