@@ -51,18 +51,18 @@ public class Client {
         this.bankAccount = new BankAccount();
     }
 
-    //* addBankAccount(takes one argument, bankAccount obj - if there already exists a banking account of the same type
-    // * in the array an error message is printed)
-    public static void addBankAccount(String bankAccount){
-        Scanner scanner=new Scanner(System.in);
-
-    }
-
-    //public String toString() { //creere metoda prin care in main prin System.out.println(client)/
-    // System.out.println(client.toString()) afiseaza ce este in metoda to string (nume, cnp, banckAccount;
-    // return "Name= " + this.name + ", CNP=" + this.cnp + ", Bank account= " + this.bankAccount;
-
-    //}// cu Alt+Ins se poate insera toString si suprascrie metoda de mai sus
+    // * addBankAccount(takes one argument, bankAccount obj - if there already exists a banking account of the same type
+    //  * in the array an error message is printed)
+    // public static void addBankAccount(BankAccount bankAccount){
+    //      System.out.println("Add bankaccount: ");
+    //      Scanner scanner=new Scanner(System.in);
+    //
+    //      }
+    //  }
+    // public String toString() { //creere metoda prin care in main prin System.out.println(client)/
+    //  System.out.println(client.toString()) afiseaza ce este in metoda to string (nume, cnp, banckAccount;
+    //  return "Name= " + this.name + ", CNP=" + this.cnp + ", Bank account= " + this.bankAccount;
+    // }// cu Alt+Ins se poate insera toString si suprascrie metoda de mai sus
 
     @Override
     public String toString() {

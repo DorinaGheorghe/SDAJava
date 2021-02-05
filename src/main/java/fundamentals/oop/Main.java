@@ -1,7 +1,5 @@
 package fundamentals.oop;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
 import java.util.Scanner;
 
 public class Main {
@@ -9,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         BankAccount bankAccount = new BankAccount(); ///am creat un obiect de tip bankAccount
-        System.out.println("Type " + bankAccount.getType());
+        System.out.println("Account type " + bankAccount.getAccountType());
         System.out.println("Currency " + bankAccount.getCurrency());
 
         //case 1: give bankaccount to the client from outside (created outside)
@@ -19,7 +17,7 @@ public class Main {
         client1.getBankAccount().addMoney(12);
         client1.getBankAccount().withdrawMoney(13);
         System.out.println(client1);
-        client1.getBankAccount().setType("SPENDING");
+        client1.getBankAccount().setAccountType("SPENDING");
         client1.getBankAccount().addMoney(3);
         client1.getBankAccount().withdrawMoney(10);
 
