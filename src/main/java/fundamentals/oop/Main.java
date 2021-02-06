@@ -53,6 +53,7 @@ public class Main {
 //        StringsExercises.testSpecifiedSequence();
 //        StringsExercises.replaceSpecifiedCharacter();
 //        StringsExercises.uppercaseFirstLetter();
+        StringsExercises.compareStrings();
 
     }
 }

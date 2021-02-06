@@ -4,7 +4,8 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 //Strings: For these exercises implement them as methods in a class: StringExercises and test them in Main
-//Write a Java program to compare 2 strings ignoring case consideration.  (e.g: “Dog” is equal to “dOG”)
+
+
 public class StringsExercises {
     /**
      * Write a Java program to get the character at the given index within the String
@@ -46,5 +47,40 @@ public class StringsExercises {
     /**
      * Write a Java program to uppercase first letter of every word in a text(string).
      */
+    public static void uppercaseFirstLetter() {
 
+    }
+
+    /**
+     * Write a Java program to compare 2 strings ignoring case consideration.  (e.g: “Dog” is equal to “dOG”)
+     */
+    public static void compareStrings() {
+
+        String str1 = "This is exercise 1";
+        String str2 = "This is Exercise 1";
+
+        System.out.println("String 1: " + str1);
+        System.out.println("String 2: " + str2);
+
+        // Compare the two strings. .compareToIgnoreCase->Compares two strings lexicographically, ignoring case
+        // differences.
+        int result = str1.compareToIgnoreCase(str2);
+
+        // Display the results of the comparison.
+        if (result < 0) {
+            System.out.println("\"" + str1 + "\"" +
+                    " is less than " +
+                    "\"" + str2 + "\"");
+        } else if (result == 0) {
+            System.out.println("\"" + str1 + "\"" +
+                    " is equal to " +
+                    "\"" + str2 + "\"");
+        } else // if (result > 0)
+
+        {
+            System.out.println("\"" + str1 + "\"" +
+                    " is greater than " +
+                    "\"" + str2 + "\"");
+        }
+    }
 }
